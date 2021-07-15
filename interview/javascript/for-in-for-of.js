@@ -11,6 +11,8 @@ for (let i in list) {
 
 for (let i of list) {
    console.log(i); // "4", "5", "6"
+   console.log(list[i]) // will print 4, 5, 6
+}
 
 // for...in Loop => iterates over the index in the array.
 // for...of Loop => iterates over the object of objects.
