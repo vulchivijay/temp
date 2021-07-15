@@ -1,3 +1,29 @@
+// Human Class
+class Human {
+  constructor (firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+  sayHello () {
+    console.log(`Hello, I'm ${this.firstName}`)
+  }
+}
+// Developer Class
+class Developer extends Human {
+  constructor(firstName, lastName) {
+    super(firstName, lastName)
+  }
+  // Add other methods
+  code (thing) {
+    console.log(`${this.firstName} coded ${thing}`)
+  }
+}
+
+var chris = new Developer('Chris', 'Coyier')
+console.log(chris)
+chris.sayHello()
+
+
 // We have a simple cars object
 var cars = {
   type:"sedan",
