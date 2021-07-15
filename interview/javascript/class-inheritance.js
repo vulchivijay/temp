@@ -22,6 +22,11 @@ class Developer extends Human {
 var chris = new Developer('Chris', 'Coyier')
 console.log(chris)
 chris.sayHello()
+chris.code("React");
+
+// Developer {firstName: "Chris", lastName: "Coyier"} firstName: "Chris" lastName: "Coyier"__proto__: Human
+// Hello, I'm Chris
+// Chris coded React
 
 
 // We have a simple cars object
